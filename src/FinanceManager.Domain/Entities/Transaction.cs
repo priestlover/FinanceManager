@@ -10,7 +10,7 @@ namespace FinanceManager.Domain.Entities
     internal class Transaction
     {
         
-        public int Id { get; private set; }
+        public Guid Id { get; private set; }
 
         public string Category { get; private set; }
 
@@ -38,5 +38,6 @@ namespace FinanceManager.Domain.Entities
             Date = date;
             UserId = userId;
         }
+
     }
 }

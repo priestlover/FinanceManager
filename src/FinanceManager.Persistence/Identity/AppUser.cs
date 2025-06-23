@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 
-namespace FinanceManager.Domain.Enums
+namespace FinanceManager.Persistence.Identity
 {
-    internal enum UserRole
+    public class AppUser : IdentityUser<Guid>
     {
-        User,
-        Admin
     }
 }

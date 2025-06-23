@@ -14,19 +14,19 @@ namespace FinanceManager.Domain.Entities
         public string Name { get; private set; }
        
         public string Email { get; private set; }
-       
-        public string ProfilePictureUrl { get; private set; }
 
-        public UserRole Role { get; private set; }
 
         private User() { }
 
-        public User(string name, string email, UserRole role, string profilepicrureulr) { 
+        public User(string name, string email) { 
             Id = Guid.NewGuid();
             Name = name;
             Email = email;
-            Role = role;
-            ProfilePictureUrl = profilepicrureulr;
         }
     }
+
+
+
+
+
 }
