@@ -18,18 +18,7 @@ namespace FinanceManager.Domain.Entities
 
         public DateTime EndDate { get; private set; }
 
-        public Guid UserId { get; private set; }
-
         private Budget() { }
 
-        public Budget(int id, string category, decimal limit, DateTime startDate, DateTime endDate, Guid userId)
-        {
-            Id = Guid.NewGuid();
-            Category = category;
-            Limit = limit;
-            StartDate = startDate;
-            EndDate = endDate;
-            UserId = userId;
-        }
     }
 }

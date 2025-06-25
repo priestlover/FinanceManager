@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinanceManager.Domain.Interfaces
 {
-    internal interface IBudgerRepository
+    internal interface IBudgetRepository
     {
     }
 }

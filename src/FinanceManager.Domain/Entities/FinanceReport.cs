@@ -8,8 +8,6 @@ namespace FinanceManager.Domain.Entities
 {
     internal class FinanceReport
     {
-        public Guid Id { get; private set; }
-
         public DateTime PeriodStart { get; private set; }
 
         public DateTime PeriodEnd { get; private set;}
@@ -20,21 +18,14 @@ namespace FinanceManager.Domain.Entities
 
         public decimal NetTotal => TotalIncome - TotalExpenses;
 
-        public List<Transaction> Transactions { get; private set; }
+        private readonly List<Transaction> _transactions = new();
 
-        public Guid UserId { get; private set; }
+        public IReadOnlyCollection<Transaction> Transactions => _transactions.AsReadOnly();
 
-        private FinanceReport() { }
-
-        public FinanceReport(Guid id, DateTime periodStart, DateTime periodEnd, decimal totalIncome, decimal totalExpenses, List<Transaction> transactions, Guid userId)
-        {
-            Id = Guid.NewGuid();
-            PeriodStart = periodStart;
-            PeriodEnd = periodEnd;
-            TotalIncome = totalIncome;
-            TotalExpenses = totalExpenses;
-            Transactions = new List<Transaction>();
-            UserId = userId;
+        private FinanceReport() {
+            
         }
+
+        public  
     }
 }

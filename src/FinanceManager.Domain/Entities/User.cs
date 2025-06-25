@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FinanceManager.Domain.Entities
 {
-    internal class User
+    public class User
     {
         public Guid Id { get; private set; } 
        
@@ -15,18 +15,7 @@ namespace FinanceManager.Domain.Entities
        
         public string Email { get; private set; }
 
-
         private User() { }
 
-        public User(string name, string email) { 
-            Id = Guid.NewGuid();
-            Name = name;
-            Email = email;
-        }
     }
-
-
-
-
-
 }

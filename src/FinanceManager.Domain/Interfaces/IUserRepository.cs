@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinanceManager.Domain.Interfaces
 {
-    public interface ITransactionRepository
+    internal interface IUserRepository
     {
-
-
-
-
     }
 }
