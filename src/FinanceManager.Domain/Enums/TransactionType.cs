@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinanceManager.Domain.Enums
 {
-    internal enum TransactionType
+    public enum TransactionType
     {
         Expense,
         Income,

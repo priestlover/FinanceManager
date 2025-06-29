@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinanceManager.Domain.Entities
 {
-    internal class Budget
+    public class Budget
     {
         public Guid Id { get; private set; }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinanceManager.Domain.Enums
 {
-    internal enum PaymentMethod
+    public enum PaymentMethod
     {
         Unknown = 0,
         Cash = 1,

@@ -11,7 +11,7 @@ namespace FinanceManager.Application.Transactions.Commands.CreateTransaction
     {
         public CreateTransactionCommandValidator() 
         {
-            RuleFor(createTransactionCommand => createTransactionCommand.)
+            
 
         }
 

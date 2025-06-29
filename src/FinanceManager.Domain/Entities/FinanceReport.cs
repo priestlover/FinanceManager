@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinanceManager.Domain.Entities
 {
-    internal class FinanceReport
+    public class FinanceReport
     {
         public DateTime PeriodStart { get; private set; }
 
@@ -26,6 +26,6 @@ namespace FinanceManager.Domain.Entities
             
         }
 
-        public  
+        
     }
 }
